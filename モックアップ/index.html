@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>CHAT ROOM - チャットルームにようこそ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/db54da857f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="script.js" ></script>
+    <!-- CSSファイルの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#notice" id="hidden" style="display:none;"></button>
+    <div class="modal fade" tabindex="-1" id="notice" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h2 class="modal-title">
+              ご利用に関する注意</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              チャットを妨害する目的の荒らし行為や、特定の方への嫌がらせ、ストーキング行為、出会い目的の募集、初対面やそれに近い方へ一方的に連絡先を伝える行為、または尋ねる行為、公序良俗に反する発言、誹謗中傷、乱暴な言葉、広告宣伝などは、全て禁止行為です。お見かけになられましたら、チャットルーム内の通報窓口より、ご連絡ください。全て、確認の上、然るべき対応を行っています。
+            </p>
+            <p>
+              ご自身のプライバシー情報は、厳重に取り扱うようご留意ください。氏名や住所、連絡先、所属する組織等を公開する場合は、常にリスクを伴いますので、慎重にご判断の上、自己責任にて発言いただくようお願いいたします。
+            </p>
+            <p>
+              問題があるとお感じになられる方に対してであっても、あなた自身が、乱暴な発言をもって対応することは、他の方からは、それ自体が迷惑行為と感じられる場合もあります。必要以上に反応することなく、ご通報いただくと ともに、仮にその方に対して発言を行われる場合は、落ち着いて、礼節を持った発言で対応をするよう心がけてください。
+            </p>
+            <p>
+              10代の方も多くご利用いただいています。成人間では許される会話内容でも、未成年者の方が参加されていらっしゃるときは、ぜひ、ご配慮をお願いいたします。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              <i class="fa-solid fa-hand-sparkles"></i>わかりました
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <header>
+      <div class="container">
+      <span id="log-out">
+        ログアウト
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </span>
+      <h1>CHAT ROOM</h1>
+      <aside>チャットルームにようこそ</aside>
+    </div>
+    </header>
+    <main>
+    <div class="container" id="timelines">
+
+
+      <div class="timeline">
+        <div class="text">
+          <div class="name">
+            <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><mask id=":r8:" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="#FFFFFF"></rect></mask><g mask="url(#:r8:)"><rect width="36" height="36" fill="#ff005b"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#ffb238" rx="36"></rect><g transform="translate(-4 -4) rotate(-4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
+            ななしさん</div>
+          <div class="message">こんにちは、いつもどんなはなしをしていますか？</div>
+        </div>
+        <div class="date">
+          <div class="time">2023/12/30 14:41</div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="text">
+          <div class="name">
+            <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><mask id=":r8:" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="#FFFFFF"></rect></mask><g mask="url(#:r8:)"><rect width="36" height="36" fill="#ff005b"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#ffb238" rx="36"></rect><g transform="translate(-4 -4) rotate(-4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
+            ななしさん</div>
+          <div class="message">こんにちは、いつもどんなはなしをしていますか？</div>
+        </div>
+        <div class="date">
+          <div class="time">2023/12/30 14:41</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container" id="form">
+
+        <div id="name">
+          <label for="name-input">お名前：</label>
+          <input type="text" class="form-control" id="name-input" name="name" autocomplete="off">
+        </div>
+        <div id ="message" class="input-group">
+          <input class="form-control" name="message" autocomplete="off"></input>
+          <button type="button" class="btn btn-dark">
+            <i class="fa-regular fa-paper-plane"></i>
+            送信</button>
+        </div>
+        <aside>出会い目的、個人情報の書き込みは禁止です</aside>
+
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
